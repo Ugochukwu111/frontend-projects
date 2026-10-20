@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tasks</title>
+  <link rel="stylesheet" href="/todo-list/todo.css">
+</head>
+<body>
+  <main class="todo-app">
+    <header class="header">
+      <div>
+        <p class="date">TUESDAY, OCTOBER 20</p>
+        <h1>My Tasks</h1>
+        <p class="subtitle">A little progress every day.</p>
+      </div>
+      <span class="logo">✓</span>
+    </header>
+
+    <section class="progress">
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+      </div>
+      <p>2 of 5 tasks completed <span>40%</span></p>
+    </section>
+
+    <nav class="filters">
+      <button class="active">All tasks 5</button>
+      <button>Pending 3</button>
+      <button>Done 2</button>
+    </nav>
+
+    <form class="add-task">
+      <input
+        type="text"
+        placeholder="What needs to be done?"
+        aria-label="New task"
+      >
+      <button type="submit">+</button>
+    </form>
+
+    <section class="task-section">
+      <h2>TODAY</h2>
+
+      <ul class="task-list">
+        <li class="task completed">
+          <input type="checkbox" checked>
+          <div class="task-info">
+            <p>Review project requirements</p>
+            <span>Work</span>
+          </div>
+        </li>
+
+        <li class="task completed">
+          <input type="checkbox" checked>
+          <div class="task-info">
+            <p>Build the todo list UI</p>
+            <span>Development</span>
+          </div>
+        </li>
+
+        <li class="task">
+          <input type="checkbox">
+          <div class="task-info">
+            <p>Practice JavaScript arrays</p>
+            <span>Learning</span>
+          </div>
+        </li>
+
+        <li class="task">
+          <input type="checkbox">
+          <div class="task-info">
+            <p>Push code to GitHub</p>
+            <span>Development</span>
+          </div>
+        </li>
+
+        <li class="task">
+          <input type="checkbox">
+          <div class="task-info">
+            <p>Read for 30 minutes</p>
+            <span>Personal</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>STAY FOCUSED. GET THINGS DONE.</footer>
+  </main>
+</body>
+</html>
